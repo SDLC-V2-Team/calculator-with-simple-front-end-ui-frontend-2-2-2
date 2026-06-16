@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "A simple client-side calculator built with vanilla JavaScript, HTML5, and CSS3.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve .",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "calculator",
+    "vanilla-js",
+    "client-side"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1",
+    "vitest": "^1.6.0"
+  }
+}

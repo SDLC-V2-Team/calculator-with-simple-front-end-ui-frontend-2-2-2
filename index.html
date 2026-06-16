@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple client-side calculator built with vanilla JavaScript." />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="calculator" role="application" aria-label="Calculator">
+    <div class="display" id="display" aria-live="polite">
+      <div class="display-history" id="history"></div>
+      <div class="display-current" id="current">0</div>
+    </div>
+    <div class="keys">
+      <button type="button" class="key key-action" data-action="clear">AC</button>
+      <button type="button" class="key key-action" data-action="sign">+/-</button>
+      <button type="button" class="key key-action" data-action="percent">%</button>
+      <button type="button" class="key key-operator" data-action="operator" data-operator="/">&divide;</button>
+
+      <button type="button" class="key key-number" data-action="number" data-value="7">7</button>
+      <button type="button" class="key key-number" data-action="number" data-value="8">8</button>
+      <button type="button" class="key key-number" data-action="number" data-value="9">9</button>
+      <button type="button" class="key key-operator" data-action="operator" data-operator="*">&times;</button>
+
+      <button type="button" class="key key-number" data-action="number" data-value="4">4</button>
+      <button type="button" class="key key-number" data-action="number" data-value="5">5</button>
+      <button type="button" class="key key-number" data-action="number" data-value="6">6</button>
+      <button type="button" class="key key-operator" data-action="operator" data-operator="-">&minus;</button>
+
+      <button type="button" class="key key-number" data-action="number" data-value="1">1</button>
+      <button type="button" class="key key-number" data-action="number" data-value="2">2</button>
+      <button type="button" class="key key-number" data-action="number" data-value="3">3</button>
+      <button type="button" class="key key-operator" data-action="operator" data-operator="+">+</button>
+
+      <button type="button" class="key key-number key-zero" data-action="number" data-value="0">0</button>
+      <button type="button" class="key key-number" data-action="decimal">.</button>
+      <button type="button" class="key key-equals" data-action="equals">=</button>
+    </div>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
